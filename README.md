@@ -17,7 +17,7 @@ Evaluation of PowerCo’s physical emission intensity (kg CO₂e/MWh) vs. German
 - `.gitignore` – ignores temp files, caches, etc.
 
 ## 🚀 Getting Started
-1. **Clone** the repo  
+1. **Clone** the repo
    ```bash
    git clone git@github.com:you/powerco-emission-intensity.git
    cd powerco-emission-intensity
@@ -25,9 +25,9 @@ Evaluation of PowerCo’s physical emission intensity (kg CO₂e/MWh) vs. German
    ```bash
    pip install -r requirements.txt
 3. Run Analysis
-   Open 'notebooks/Ricardo_Data_Analysis.ipynb' and follow the cells
+   Open `notebooks/Ricardo_Data_Analysis.ipynb` and follow the cells
 4. View deliverables
-   See 'slides/Ricardo_Modrego_PowerCo_Case_Study.pptx'
+   See `slides/Ricardo_Modrego_PowerCo_Case_Study.pptx`
 
 ## 🔧 Configuration
 Edit `src/config.py` to adjust:
@@ -35,14 +35,14 @@ Edit `src/config.py` to adjust:
 - Geographic thresholds ('DISTANCE_THRESHOLD_DEG', 'NORTH_SEA_LAT_RANGE', 'NORTH_SEA_LON_RANGE')
 - Emission & capacity factors ('PEAK_CAPACITY_FACTOR', 'WIND_PARK_EMISSION_INTENSITY', 'SOLAR_PARK_EMISSION_INTENSITY')
 
-  ## 🧰 Running code
-  - DataLoader: loads and renames CSV/Excel files.
-  - CoordinateConverter: (optional) converts DMS to decimal degrees.
-  - SpatialMatcher: locates nearest Ember emissions to global plants.
-  -PowerPlantAnalyzer: filters by country or region, selects client plants, computes load proportions.
-  -CapacityFactorAnalyzer: computes and averages capacity factors.
-  -EmissionAnalyzer: computes emissions per MW and average intensity.
-  -EnergyCalculator & EmissionCalculator: calculate generation and final kg CO₂e/MWh metrics.
+## 🧰 Running code
+- DataLoader: loads and renames CSV/Excel files.
+- CoordinateConverter: (optional) converts DMS to decimal degrees.
+- SpatialMatcher: locates nearest Ember emissions to global plants.
+- PowerPlantAnalyzer: filters by country or region, selects client plants, computes load proportions.
+- CapacityFactorAnalyzer: computes and averages capacity factors.
+- EmissionAnalyzer: computes emissions per MW and average intensity.
+- EnergyCalculator & EmissionCalculator: calculate generation and final kg CO₂e/MWh metrics.
 
    ## 📝 Deliverables
 - **Jupyter Notebook**: `notebooks/analysis.ipynb`  
