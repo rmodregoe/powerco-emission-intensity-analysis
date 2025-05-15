@@ -1,13 +1,17 @@
+import os
+
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+
 ''' File pahts'''
-POWERCO_XLSX = "Data.xlsx"
+POWERCO_XLSX = os.path.join(PROJECT_ROOT, "data", "Data.xlsx")
 POWERCO_XLSX_SHEET = 'PowerCo Power Plants'
-GLOBAL_PPP_CSV = "global-power-plants.csv"
-EMBER_CSV = "Ember_power_plant_emitters_ets.csv"
-ELECTRICITY_GENERATION_XLSX = "Data.xlsx"
+GLOBAL_PPP_CSV = os.path.join(PROJECT_ROOT, "data", "global-power-plants.csv") 
+EMBER_CSV = os.path.join(PROJECT_ROOT, "data", "Ember_power_plant_emitters_ets.csv")
+ELECTRICITY_GENERATION_XLSX = os.path.join(PROJECT_ROOT, "data", "Data.xlsx")
 ELECTRICITY_GENERATION_XLSX_SHEET = 'Gas Generation Germany'
-CAPACITY_FACTOR_XLSX = "Data.xlsx"
+CAPACITY_FACTOR_XLSX = os.path.join(PROJECT_ROOT, "data", "Data.xlsx")
 CAPACITY_FACTOR_XLSX_SHEET = 'Capacity Factors'
-OFFSHORE_WIND_XLSX = "Data.xlsx"
+OFFSHORE_WIND_XLSX = os.path.join(PROJECT_ROOT, "data", "Data.xlsx")
 OFFSHORE_WIND_XLSX_SHEET = 'Offshore Wind Farms Germany'
 
 ''' Thresholds and ranges'''

@@ -1,5 +1,5 @@
 import pandas as pd
-from config import GLOBAL_PPP_CSV, EMBER_CSV
+import scr.config as config
 
 class DataLoader:
     """Handles loading data from Excel or CSV files."""
@@ -27,7 +27,7 @@ class DataLoader:
     
     @staticmethod
     def load_global_power_plants() -> pd.DataFrame:
-        df = pd.read_csv(GLOBAL_PPP_CSV, usecols=[
+        df = pd.read_csv(config.GLOBAL_PPP_CSV, usecols=[
             "name","latitude","longitude",
             "estimated_generation_gwh_2017","capacity_mw"
         ])
@@ -41,5 +41,5 @@ class DataLoader:
 
     @staticmethod
     def load_ember_power_plants() -> pd.DataFrame:
-        df = pd.read_csv(EMBER_CSV, usecols=["Name","Lat","Long","2022"])
+        df = pd.read_csv(config.EMBER_CSV, usecols=["Name","Lat","Long","2022"])
         return df.rename(columns={"2022":"Emissions (tCO2e)"})
