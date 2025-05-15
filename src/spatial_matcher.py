@@ -1,7 +1,7 @@
 import logging
 from scipy.spatial import cKDTree
 import pandas as pd
-import scr.config as config
+import src.config as config
 logger = logging.getLogger(__name__)
 
 class SpatialMatcher:

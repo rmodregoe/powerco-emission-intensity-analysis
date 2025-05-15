@@ -1,5 +1,5 @@
 import pandas as pd
-import scr.config as config
+import src.config as config
 
 class DataLoader:
     """Handles loading data from Excel or CSV files."""

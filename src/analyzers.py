@@ -1,6 +1,6 @@
 # analyzers.py
 import pandas as pd
-import scr.config as config
+import src.config as config
 
 class PowerPlantAnalyzer:
     def __init__(self, df: pd.DataFrame):

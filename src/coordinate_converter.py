@@ -1,6 +1,5 @@
 import re
-# from typing import Optional
-# import pandas as pd
+
 
 class CoordinateConverter:
     @staticmethod
